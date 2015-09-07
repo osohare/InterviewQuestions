@@ -4,11 +4,17 @@ using InterviewProblems;
 
 namespace InterviewProblemsUnitTest
 {
+    /// <summary>
+    /// Unit tests that define expected outcomes for Problem3 (Fibonacci to Nth iteration).
+    /// </summary>
     [TestClass]
     public class Problem3Test
     {
         public int[] expectedArray = new int[] { 0, 1, 1, 2, 3, 5 };
 
+        /// <summary>
+        /// Calculate Fibonacci to Nth 
+        /// </summary>
         [TestMethod]
         public void Fibonacci()
         {
@@ -26,6 +32,9 @@ namespace InterviewProblemsUnitTest
             }
         }
 
+        /// <summary>
+        /// Stress performance and see result by time
+        /// </summary>
         [TestMethod]
         public void FibonacciComplex()
         {

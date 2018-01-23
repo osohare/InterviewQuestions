@@ -16,18 +16,7 @@ namespace InterviewProblems
         /// <returns>Final mixed list of items</returns>
         public string[] MixList(string[] listA, string[] listB)
         {
-            if (listA.Length != listB.Length)
-                throw new ArgumentException("List are not the same length");
-
-            List<string> newList = new List<string>();
-
-            for (int i = 0; i < listA.Length; i++)
-            {
-                newList.Add(listA[i]);
-                newList.Add(listB[i]);
-            }
-
-            return newList.ToArray();
+            return new string[] { };
         }
     }
 }

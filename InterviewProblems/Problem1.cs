@@ -18,13 +18,7 @@ namespace InterviewProblems
         /// <returns>Result of the sum</returns>
         public double SumByLoop(double[] allNumbers)
         {
-            List<double> allNumbersList = allNumbers.ToList();
-            double result = 0.0;
-            foreach (var item in allNumbersList)
-            {
-                result += item;
-            }
-            return result;
+            return 0;
         }
 
         /// <summary>
@@ -34,15 +28,7 @@ namespace InterviewProblems
         /// <returns>Result of the sum</returns>
         public double SumByWhile(double[] allNumbers)
         {
-            double result = 0.0;
-            int i =0 ;
-
-            while (i < allNumbers.Length)
-            {
-                result += allNumbers[i];
-                i++;
-            }
-            return result;
+            return 0;
         }
 
         /// <summary>
@@ -52,29 +38,7 @@ namespace InterviewProblems
         /// <returns>Result of the sum</returns>
         public double SumRecursive(double[] allNumbers)
         {
-            double result = 0.0;
-            Stack<double> stack = new Stack<double>();
-            foreach (var item in allNumbers.ToList())
-	        {
-                stack.Push(item);
-	        }
-            result = RecursiveSum(stack);
-            return result;
-        }
-
-        /// <summary>
-        /// Receives a stack of numbers, will call itself until reach base case is reached and return
-        /// </summary>
-        /// <param name="allNumbers">Array of numbers tu sum</param>
-        /// <returns>Result of the sum</returns>
-        private double RecursiveSum(Stack<double> allNumbers)
-        {
-            double number = allNumbers.Pop();
-
-            if (allNumbers.Count == 0)
-                return number;
-            else
-                return number + RecursiveSum(allNumbers);
+            return 0;
         }
     }
 }
